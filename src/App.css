@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Shadows+Into+Light&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: initial;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Стили для контейнера со скроллом */
+* {
+  scrollbar-width: thin; /* ширина полосы прокрутки */
+  scrollbar-color: #001529 #ffffff; /* цвет полосы прокрутки и фона */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Стили для полосы прокрутки */
+*::-webkit-scrollbar {
+  width: 6px; /* ширина полосы прокрутки */
 }
 
-.App-link {
-  color: #61dafb;
+/* Стили для трека (фона) полосы прокрутки */
+*::-webkit-scrollbar-track {
+  background-color: #ffffff; /* цвет фона */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Стили для холста (границы) полосы прокрутки */
+*::-webkit-scrollbar-thumb {
+  background-color: #888888; /* цвет полосы прокрутки */
+  border-radius: 4px; /* радиус скругления границы */
+}
+
+/* hover-стили для холста (границы) полосы прокрутки */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555555; /* цвет полосы прокрутки при наведении */
 }
